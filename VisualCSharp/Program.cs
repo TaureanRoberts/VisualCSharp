@@ -14,12 +14,15 @@ namespace VisualCSharp
         }
         public Vector2(float lhs, float rhs)
         {
-            float m_X = lhs;
-            float m_Y = rhs;
+            float mX = lhs;
+            float mY = rhs;
         }
-        public static Vector2 operator
-        {
 
+        public static Vector2 operator + (Vector2 other)
+        {
+            Vector2 newvect2 = new Vector2();
+
+            return newvect2;
         }
     }
 
