@@ -46,8 +46,19 @@ namespace VisualCSharp
         public float dot_opperator(Vector2 other)
         {
             float dot;
-            dot = (()+())
+            dot = ((m_X * other.m_X) + (m_Y * other.m_Y));
             return dot;
+        }
+        public static float magnitude(Vector2 lhs, Vector2 rhs)
+        {
+            float mag;
+            mag = Math.Sqrt((lhs.m_X * lhs.m_X) + (rhs.m_Y * rhs.m_Y));
+            return mag;
+        }
+        public static Vector2 Normalize()
+        {
+            Vector2 norm = new Vector2();
+            return norm;
         }
     }
 
