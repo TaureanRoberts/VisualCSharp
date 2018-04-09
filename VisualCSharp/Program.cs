@@ -6,23 +6,40 @@ using System.Threading.Tasks;
 
 namespace VisualCSharp
 {
-    public class Vector2
+    class Vector2
     {
+        public float m_X;
+        public float m_Y;
 
         public Vector2()
         {
         }
         public Vector2(float lhs, float rhs)
         {
-            float mX = lhs;
-            float mY = rhs;
+            m_X = lhs;
+            m_Y = rhs;
         }
 
-        public static Vector2 operator + (Vector2 other)
+        public static Vector2 operator+ (Vector2 lhs, Vector2 rhs)
         {
-            Vector2 newvect2 = new Vector2();
-
-            return newvect2;
+            Vector2 sum = new Vector2();
+            Vector2 other = new Vector2();
+            sum.m_X = lhs.m_X + other.m_X;
+            sum.m_Y = rhs.m_Y + other.m_Y;
+            return sum;
+        }
+        public static Vector2 operator- (Vector2 lhs, Vector2 rhs)
+        {
+            Vector2 sub = new Vector2();
+            Vector2 other = new Vector2();
+            sub.m_X = lhs.m_X - other.m_X;
+            sub.m_Y = rhs.m_Y - other.m_Y;
+            return sub;
+        }
+        public static Vector2 operator* ()
+        {
+            Vector2 scaler = new Vector2();
+            scaler.m_X = m_X * ;
         }
     }
 
