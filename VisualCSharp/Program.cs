@@ -36,10 +36,18 @@ namespace VisualCSharp
             sub.m_Y = rhs.m_Y - other.m_Y;
             return sub;
         }
-        public static Vector2 operator* ()
+        public static Vector2 operator* (Vector2 other, float size)
         {
             Vector2 scaler = new Vector2();
-            scaler.m_X = m_X * ;
+            scaler.m_X = other.m_X * size;
+            scaler.m_Y = other.m_Y * size;
+            return scaler;
+        }
+        public float dot_opperator(Vector2 other)
+        {
+            float dot;
+            dot = (()+())
+            return dot;
         }
     }
 
